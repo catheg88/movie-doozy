@@ -11,10 +11,10 @@ class Home extends React.Component {
       <div className="Home">
         <Search
           handleMovieClick={this.props.handleMovieClick}
-          searchValue={this.props.searchValue}
-          handleSearchChange={this.props.handleSearchChange}
-          searchResults={this.props.searchResults}
-          storeSearchResults={this.props.storeSearchResults}
+          searchValue={this.props.searchProps.searchValue}
+          handleSearchChange={this.props.searchProps.handleSearchChange}
+          searchResults={this.props.searchProps.searchResults}
+          storeSearchResults={this.props.searchProps.storeSearchResults}
         />
         <PopularMovies handleMovieClick={this.props.handleMovieClick} />
       </div>

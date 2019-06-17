@@ -3,7 +3,6 @@ import React from 'react'
 import SearchResults from './SearchResults'
 
 class Search extends React.Component {
-  
   handleSearchChange(e) {
     clearTimeout(this.timer)    
     this.props.handleSearchChange(e.target.value)
@@ -18,6 +17,7 @@ class Search extends React.Component {
   }
   
   render() {
+    console.log(this.props.searchValue)
     return (
       <div>
         <p>Browse and search movies with Movie Doozy, powered by <a href="https://www.themoviedb.org/">The Movie Database</a></p>

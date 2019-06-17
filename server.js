@@ -65,6 +65,7 @@ server.get('/api/movie*', cache('5 minutes'), (req, res) => {
 server.get('/api/search/*', cache('5 minutes'), (req, res) => {
   console.log('route api/search')
   const searchString = req.url.split('/')[3] // get search query from url
+  // console.log(searchString)
 
   if (!searchString) { // don't hit api with a blank query string
     res.send({})

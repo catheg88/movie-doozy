@@ -45,6 +45,13 @@ class App extends React.Component {
   render(){
     const redirect = this.state.redirect
     
+    const searchProps = {
+      searchValue: this.state.searchValue,
+      handleSearchChange: this.handleSearchChange.bind(this),
+      searchResults: this.state.searchResults,
+      storeSearchResults: this.storeSearchResults.bind(this)
+    }
+    
     return (
       <div>
         { redirect ? <Redirect to={redirect} /> : null }
@@ -53,10 +60,7 @@ class App extends React.Component {
             <Home
               {...routeProps} 
               handleMovieClick={this.handleMovieClick.bind(this)}
-              searchValue={this.state.searchValue}
-              handleSearchChange={this.handleSearchChange.bind(this)}
-              searchResults={this.state.searchResults}
-              storeSearchResults={this.storeSearchResults.bind(this)}
+              searchProps={searchProps}
             />
           )}
         />  

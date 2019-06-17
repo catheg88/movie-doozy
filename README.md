@@ -27,6 +27,7 @@ The Movie Database requires an API key. The easiest way to supply it is by passi
 ```
 API_KEY=[your api key here] npm start
 ```
+If you do not have access to an API key, follow the instructions to register for one on [this page](https://developers.themoviedb.org/3/getting-started/introduction).
 
 `npm start` starts the server running on port 3000. Navigate to http://localhost:3000/ and you'll see the running app.
 

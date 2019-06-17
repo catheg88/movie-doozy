@@ -18,15 +18,13 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 20%;
-  max-width: 200px;
+  width: 200px;
   margin: 5px;
   padding: 4px;
 }
 
 .MovieTile div {
   text-align: center;
-  min-width: 200px;
 }
 
 .MovieTile img {
