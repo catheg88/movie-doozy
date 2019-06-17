@@ -1,0 +1,73 @@
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.MovieTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 20%;
+  max-width: 200px;
+  margin: 5px;
+  padding: 4px;
+}
+
+.MovieTile div {
+  text-align: center;
+  min-width: 200px;
+}
+
+.MovieTile img {
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.MovieTile:hover {
+  cursor: pointer;
+  background-color: #dbdbdb;
+  border-radius: 5px;
+}
+
+.MoviePageContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.PageImgCont {
+  width: 30%;
+  min-width: 200px;
+  max-height: 95vh;
+}
+
+.PageImgCont > img {
+  max-width: 98%;
+  max-height: 98%;
+}
+
+.PageInfoCont {
+  width: 50%;
+  min-width: 200px;
+}
+
+.GoBack {
+  width: 65px;
+  text-align: center;
+}
+
+.GoBack:hover {
+  cursor: pointer;
+  background-color: #dbdbdb;
+  border-radius: 5px;
+}
