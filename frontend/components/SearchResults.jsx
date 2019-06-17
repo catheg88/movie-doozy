@@ -6,8 +6,6 @@ class SearchResults extends React.Component {
   render() {
     let movies = []
     if (this.props.movies) {
-      console.log('this.props.movies')
-      console.log(this.props.movies)
       movies = this.props.movies.map( (movie, idx) => {
         return (
           <MovieTile

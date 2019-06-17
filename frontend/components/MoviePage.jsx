@@ -11,10 +11,6 @@ class MoviePage extends React.Component {
   componentDidMount() {
     this.props.clearRedirect()
     
-    if (!this.props.movieId) {
-      console.log(this.props.history.location)
-    }
-    
     fetch('/api/movie/' + this.props.movieId)
       .then( response => {
         return response.json()

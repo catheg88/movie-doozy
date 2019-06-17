@@ -29,5 +29,5 @@ module.exports = {
     tls: 'empty',
     net: 'empty'
   },
-  mode: 'development'
+  mode: 'production'
 };

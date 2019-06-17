@@ -17,7 +17,6 @@ class Search extends React.Component {
   }
   
   render() {
-    console.log(this.props.searchValue)
     return (
       <div>
         <p>Browse and search movies with Movie Doozy, powered by <a href="https://www.themoviedb.org/">The Movie Database</a></p>
